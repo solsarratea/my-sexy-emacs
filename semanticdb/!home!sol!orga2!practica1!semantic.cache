@@ -1,0 +1,35 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("sumarenteros" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("entero_1" variable (:type "int") (reparse-symbol arg-sub-list) [44 57])
+                    ("entero_2" variable (:type "int") (reparse-symbol arg-sub-list) [58 71]))                  
+                :type "int")
+                nil [20 72])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [83 92])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [93 106]))                  
+                :type "int")
+                nil [74 193]))          
+      :file "sumarenteros.c"
+      :pointmax 194
+      :fsize 193
+      :lastmodtime '(24402 64448 511192 837000)
+      :unmatched-syntax nil))
+  :file "!home!sol!orga2!practica1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

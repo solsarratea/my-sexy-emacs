@@ -1,0 +1,35 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("sumardoubles" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("double_1" variable (:type "double") (reparse-symbol arg-sub-list) [47 63])
+                    ("double_2" variable (:type "double") (reparse-symbol arg-sub-list) [64 80]))                  
+                :type "double")
+                nil [20 81])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [92 101])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [102 115]))                  
+                :type "int")
+                nil [83 209]))          
+      :file "sumardoubles.c"
+      :pointmax 210
+      :fsize 209
+      :lastmodtime '(24404 6428 52476 838000)
+      :unmatched-syntax '((symbol 210 . 211))))
+  :file "!home!sol!orga2!practica1!sumardoubles!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

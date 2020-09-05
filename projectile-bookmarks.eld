@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/orga2/practica1/")
