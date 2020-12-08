@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/orga2/practica1/")
+("~/roadmap/" "~/GPU-fluid-simulation/physarum/" "~/GPU-fluid-simulation/FluidSimulation/" "~/" "~/GPU-fluid-simulation/" "~/fluid-simulation/" "~/.emacs.d/" "~/orga2/practica1/")

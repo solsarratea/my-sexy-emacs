@@ -34,7 +34,7 @@
 ;; function-args
 ;; (require 'function-args)
 ;; (fa-config-default)
-;; (define-key c-mode-map  [(tab)] 'company-complete)
+;  (define-key c-mode-map  [(tab)] 'company-complete)
 ;; (define-key c++-mode-map  [(tab)] 'company-complete)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -50,10 +50,32 @@
  '(gdb-show-main t)
  '(package-selected-packages
    (quote
-    (nasm-mode nyan-mode yasnippet-snippets sr-speedbar color-theme-sanityinc-tomorrow zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu))))
+    (markdown-preview-mode markdown-mode+ markdown-mode glsl-mode org-bullets info-beamer ess babel-repl org-babel-eval-in-repl htmlize nasm-mode nyan-mode yasnippet-snippets sr-speedbar color-theme-sanityinc-tomorrow zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(when (require 'redo nil 'noerror)
+  (global-set-key (kbd "C-S-z") 'redo))
+
+(global-set-key (kbd "C-z") 'undo)
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((emacs-lisp . nil)
+   (R . t)
+   (C . t)
+   (ruby . t)))
+
+;; Disable scrollbars
+(customize-set-variable 'scroll-bar-mode nil)
+(customize-set-variable 'horizontal-scroll-bar-mode nil)
+
+
+;;Enable linum mode
+(global-linum-mode 1)
+
+(setq org-log-done 'time)
