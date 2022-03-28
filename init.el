@@ -79,3 +79,7 @@
 (global-linum-mode 1)
 
 (setq org-log-done 'time)
+
+(require 'neotree)
+(global-set-key [f12] 'neotree-toggle)
+
